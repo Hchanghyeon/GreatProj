@@ -1,0 +1,75 @@
+* {
+  font-family: "Nanum Gothic", sans-serif;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+      -moz-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.logo > img {
+  width: 200px;
+  height: 84px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+}
+
+.btn {
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  z-index: 29;
+  cursor: pointer;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s;
+}
+
+section {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.main_content {
+  margin-bottom: 30px;
+}
+
+.main_header_1 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+section button {
+  padding: 15px 20px;
+  background-color: #4caf50;
+  border-radius: 10px;
+  color: white;
+  border-style: none;
+}

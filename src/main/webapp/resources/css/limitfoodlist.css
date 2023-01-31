@@ -1,0 +1,255 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    appearance: none;
+    -moz-appearance: none; 
+    -webkit-appearance: none;
+        -moz-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+a:hover{
+    color: white;
+
+}
+
+img {
+	width:50px;
+	height:50px;
+	border-radius:30px;
+}
+
+.list1 a {display:block;width:100%;}
+
+
+#foodimg, #foodcls, #foodDate, #foodalink, .foodlimit{
+	display:flex;
+	justify-content:center;
+	align-items:center;	
+}
+
+#foodimg {
+	width:15%;
+}
+
+#foodcls {
+	width:50%;
+}
+
+.foodlimit {
+	width:10%;
+}
+
+#foodDate {
+	width:20%;
+	
+}
+
+#foodalink {
+	width:5%;
+}
+
+
+body {
+	height:100vh;
+	margin:0px;
+
+}
+body > .btn > i {
+    position: absolute;
+    right:20px;
+    top:20px;
+    font-size:20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo > img {
+    left:-10px;
+    top:-1px;
+    width: 200px;
+    height: 84px;
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.title_text{
+    font-size: 150%;
+    font-weight: 900;
+}
+
+.list1{
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.list1 li{
+    padding: 15px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list1 li:hover{
+    background-color: #4CAF50;
+    border-radius: 4px;
+    color: white;
+    
+}
+
+
+.list2{
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.list2 a{
+    padding-right: 2%;
+}
+.list2 li{
+    padding: 10px 12px;
+}
+
+.list2 li:hover{
+    background-color: #4CAF50;
+    border-radius: 4px;
+    color: white;
+}
+
+.slide a {
+	color:white;
+}
+
+.slide{
+    width:80%;
+    position:absolute;
+    left:-100%;                    
+    top:0;                         
+    right:0;                       
+    bottom:0;
+    height:100vh;                     
+    
+    -webkit-transition: left 2s;  
+    -moz-transition: left 2s;     
+    -ms-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+    background-color:#4caf50;
+    z-index: 0;
+    border-right: 1px solid;
+    color: white;
+  }
+  .slide-title{
+    width:100%;
+    height:100px;
+    font-size:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid white;
+    font-weight: bold;
+  }
+  .slide-title div {
+      margin-left :40px;
+      margin-right: 40px;
+  }
+
+  .slide-title img {
+      width:80px;
+      height: 80px;
+  }
+  .slide.on{
+    left:0;
+    height:100vh;
+    bottom:0;
+  }
+  .slide ul li{
+    display:block;
+    width:30%;
+    padding:10px;
+    border-bottom:1px solid white;
+    margin-top:20px;
+  }
+
+  .profilelogout {
+    position:absolute;
+  	bottom:20px;
+  	right:20px;
+  }
+
+  .profileuserlogout {
+  	position:absolute;
+  	bottom:20px;
+  	left:20px;
+  }
+
+@media screen and (max-width:768px){
+    .logo > img {
+        left:-5px;
+        top:3px;
+        width: 150px;
+        height: 70px;
+    }
+    .title_text{
+        text-align: center;
+        font-size: 120%;
+    }
+    li{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #foodcls {
+	width:50%;
+}
+
+#foodDate {
+	width:30%;
+	
+	
+	
+}
+    
+        .slide{
+        -webkit-transition: left 1s;  
+        -moz-transition: left 1s;     
+        -ms-transition: left 1s;
+        -o-transition: left 1s;
+        transition: left 1s;
+      }
+
+      .slide-title{
+          font-size:12px;
+      }
+
+      .slide ul li{
+        width:80%;
+      }
+      
+      .profileuserlogout {
+      	font-size:11px;
+      }
+      
+      .profilelogout {
+      	font-size:11px;
+      }
+    
+
+}

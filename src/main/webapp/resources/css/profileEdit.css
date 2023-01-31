@@ -1,0 +1,412 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    appearance: none;
+    -moz-appearance: none; 
+    -webkit-appearance: none;
+        -moz-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin:0px;
+    
+}
+
+body > header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color:gainsboro;  
+}
+
+body > header > div {
+    font-weight: bold;
+    font-size:20px;
+
+}
+
+
+
+	/* 중복아이디 존재하지 않는경우 */
+	.id_input_re_1{
+		font-size:14px;
+		color : green;
+		display : none;
+	}
+	/* 중복아이디 존재하는 경우 */
+	.id_input_re_2{
+		font-size:14px;
+		color : red;
+		display : none;
+	}
+
+
+section {
+    display:flex;
+    justify-content: center;
+}
+article {
+    margin-top:50px;
+    min-width:40%;
+    max-width:50%;
+    
+    
+}
+
+body > header > a{
+	padding-bottom:20px;
+	text-decoration:none;
+	color:black;
+	cursor:pointer;
+}
+
+body > header > a > i {
+    font-size:20px;
+    position: absolute;
+    left:10px;
+    font-weight: bold;
+}
+input[type="checkbox"]{
+	    appearance: checkbox;
+}
+    #checkboxlist {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #checkboxlist div {
+        width:33%;
+        text-align: center;
+    }
+
+form > div > label {
+    margin-top:30px;
+    margin-bottom:10px;
+    text-align: left;
+    display:block;
+    font-size:16px;
+    font-weight: 400;
+}
+
+input[type="text"], input[type="number"],input[type="password"] {
+    width:100%;
+    height:40px;
+    border-style:none;
+    border-width:0px;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-radius:0px;
+}
+
+input[id="familyid"] {
+    width:80%;
+}
+
+input[id="text"] {
+    width:100%;
+}
+
+input[type="button"] {
+    width:20%;
+    height: 40px ;
+    margin-left:10px;
+    border-radius:15px;
+    border-width:1px;
+    border-color:#4caf50;
+    background-color:white;
+    color:#4caf50;
+}
+
+input[type="submit"] {
+    width:100%;
+    height: 40px;
+    border-radius: 15px;
+    border-width:1px;
+    background-color:#4caf50;
+    border-style:none;
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.submit {
+    margin-top:30px;
+    margin-bottom:50px;
+    display:flex;
+    justify-content: center;
+}
+
+.passcheck {
+	margin-top:10px;
+}
+
+.idinput {
+	margin-bottom:10px;
+}
+
+
+input[type="radio" i] {
+    appearance: radio;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+input[type="number"]{
+	    appearance: textfield;
+    -moz-appearance: textfield; 
+    -webkit-appearance: textfield;
+}
+.path > div {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	margin-top:20px;
+
+	padding:10px 20px;
+}
+
+
+.path > div div div {
+	display:block;
+	text-align:center;
+}
+
+.path > div div img {
+	width:80px;
+	height:80px;
+	margin-right:10px;
+	margin-left:10px;
+}
+
+
+#nation,#ingredient, #level{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px;
+    text-align: center;
+   	margin-top:30px;
+	margin-bottom:30px;
+}
+
+
+.menu {
+    font-weight: bold;
+    width:10%;
+    text-align: center;
+}
+
+.menudetail {
+    width:90%;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.menudetail div {
+    margin-right: 20px;
+}
+
+
+input[type="checkbox"]{
+    appearance: checkbox;
+    display: none;
+}
+
+.menudetail label {
+    border-style: solid;
+    border-width:1px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    border-color:silver;
+    margin-right:10px;
+    font-size:14px;
+    margin-bottom:5px;
+    margin-top:5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: rgb(74, 202, 213);
+    color:white;
+    font-weight: bold;
+}
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+
+@media screen and (max-width: 1024px) {
+	article {
+        margin-top:10px;
+        max-width:80%;
+        width:70%;
+       }
+       
+       input[type="button"]{
+       font-size:10px;
+       text-align:center;
+       }
+
+}
+
+
+@media screen and (max-width:700px){
+	article {
+        margin-top:10px;
+        max-width:80%;
+        width:70%;
+       }
+       
+       input[type="button"]{
+       font-size:10px;
+       text-align:center;
+       }
+    
+}
+
+
+      #search_area {
+            width:90%;
+            height:40px;
+            border-radius: 10px;
+            border-style:solid;
+            border-width:1px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            padding-left:20px;
+        }
+        #autoMaker {
+            display: none;
+            width: 90%;
+            height: 100px;
+            background: white;
+            margin-top: 3px;
+            cursor: pointer;
+            overflow: scroll;
+            appearance: none;
+            
+        }
+
+        #autoMaker::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border: 3px solid #fff;
+}
+#autoMaker:-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: block;
+  height: 5px;
+  background: #e9e9e9;
+}
+#autoMaker::-webkit-scrollbar-track {
+  background: #e9e9e9;
+  -webkit-border-radius: 10px;
+  border-radius:10px;
+}
+#autoMaker::-webkit-scrollbar-thumb {
+  height: 50px;
+  width: 50px;
+  background: #4caf50;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+        #autoMaker>div {
+            border-bottom: 1px solid #e6e6e6;
+            padding:5px 10px;
+            font-size:14px;
+            font-weight: bold;
+        }
+
+        #autoMaker>div:hover {
+            background: #e6d1ff;
+        }
+
+        #Maker_main {
+            margin-top:30px;
+            display:flex;
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+        .list {
+            border-width:1px;
+            border-style:solid;
+            border-radius: 5px;
+            padding: 3px 10px;
+            margin-top:5px;
+            margin-left:2px;
+            margin-right:2px;
+            font-size:14px;
+            font-weight:bold;
+            border-color:#e9e9e9;
+            
+        }
+        hr {
+        margin-top:30px;
+        margin-bottom:30px;
+       border-top: 1px solid #e9e9e9;
+        }
+        
+        .sel {
+        	margin-top:50px;
+        	margin-bottom:20px;
+        	font-size:13px;
+        	font-weight:bold;
+        }
+
+        .search_header {
+            display:flex;
+            justify-content: center;
+        }
+
+        .search_header > button {
+            width:10%;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-width:1px;
+            border-left-style:none;
+            background-color:#4caf50;
+            border-bottom-color:#4caf50;
+            color:white;
+            font-weight: bold;
+        }
+
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
+
+@media screen and (max-width: 480px) {
+
+	article {
+        margin-top:10px;
+        max-width:80%;
+        width:70%;
+       }
+       
+       input[type="button"]{
+       font-size:10px;
+       text-align:center;
+       }
+   .path > div div img {
+	width:60px;
+	height:60px;
+	margin-right:10px;
+	margin-left:10px;
+}
+       
+
+}

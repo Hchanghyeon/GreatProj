@@ -1,0 +1,270 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    appearance: none;
+    -moz-appearance: none; 
+    -webkit-appearance: none;
+            -moz-tap-highlight-color:rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin:0px;
+    
+}
+
+body > header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color:gainsboro;  
+}
+
+body > header > div {
+    font-weight: bold;
+    font-size:20px;
+
+}
+
+	/* 중복아이디 존재하지 않는경우 */
+	.id_input_re_1{
+		font-size:14px;
+		color : green;
+		display : none;
+	}
+	/* 중복아이디 존재하는 경우 */
+	.id_input_re_2{
+		font-size:14px;
+		color : red;
+		display : none;
+	}
+
+
+section {
+    display:flex;
+    justify-content: center;
+}
+
+article {
+    margin-top:50px;
+    min-width:40%;
+    max-width:50%;
+    
+}
+
+body > header > a{
+	padding-bottom:20px;
+	text-decoration:none;
+	color:black;
+	cursor:pointer;
+}
+
+body > header > a > i {
+    font-size:20px;
+    position: absolute;
+    left:10px;
+    font-weight: bold;
+}
+
+form div div{
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+
+form > div > label {
+    margin-top:30px;
+    margin-bottom:10px;
+    text-align: left;
+    display:block;
+    font-size:16px;
+    font-weight: 400;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width:100%;
+    height:40px;
+    border-radius:0px;
+    border-style:none;
+    border-width:0px;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+}
+
+input[id="familyid"] {
+    width:80%;
+}
+
+input[id="text"] {
+    width:100%;
+}
+
+input[type="button"] {
+	width:20%;
+	height:100%;
+	border-style:none;
+	background-color:#4caf50;
+	color:white;
+}
+
+input[type="submit"] {
+    width:100%;
+    height: 40px;
+    border-radius: 15px;
+    border-width:1px;
+    background-color:#4caf50;
+    border-style:none;
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.submit {
+    margin-top:30px;
+    margin-bottom:50px;
+    display:flex;
+    justify-content: center;
+}
+
+.passcheck {
+	margin-top:10px;
+}
+
+.idinput {
+	display:flex;
+	margin-bottom:10px;
+	justify-content: space-between;
+	width:100%;
+}
+
+.pass {
+	margin-top:10px;
+	color:#4caf50;
+	font-size:13px;
+}
+
+.idinput div {
+	width:100%;
+	display:flex;
+}
+
+.idinput > input[type="text"]{
+	width:70%;
+	justify-content:space-between;
+}
+
+.add {
+	display:flex;
+	justify-content:space-between;
+}
+
+.add input {
+	width:80%;
+}
+
+.add button {
+	width:20%;
+	border-style:none;
+	background-color:#4caf50;
+	color:white;
+}
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+
+.modal2 {
+	display: none;
+	z-index: 500;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	justify-content:center;
+	align-items:center;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal2 button {
+	position: absolute;
+	top: 3rem;
+	right: 3rem;
+	background: transparent;
+	border: 0;
+	color: #ffffff;
+	font-size: 3rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	article {
+        margin-top:10px;
+        max-width:80%;
+        width:70%;
+       }
+       
+       input[type="button"]{
+       font-size:10px;
+       text-align:center;
+       }
+       
+              .add button {
+		font-size:8px;
+              }
+}
+
+
+@media screen and (max-width:700px){
+	article {
+        margin-top:10px;
+        max-width:80%;
+        width:70%;
+       }
+       
+       input[type="button"]{
+       font-size:10px;
+       text-align:center;
+       }
+       
+       
+       .add button {
+		font-size:8px;
+       }
+}
+
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+*/
+
+@media screen and (max-width: 480px) {
+
+	article {
+        margin-top:10px;
+        max-width:80%;
+        width:70%;
+       }
+       
+       input[type="button"]{
+       font-size:10px;
+       text-align:center;
+       border-radius:0px;
+       }
+       
+       .pass {
+      	 font-size:10px;
+       }
+       
+       .add button {
+		font-size:8px;
+		}
+}

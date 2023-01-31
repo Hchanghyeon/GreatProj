@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.great.mapper.RecipeMapper">
+   <select id="getwantRecipeList" resultType="com.great.domain.RecipeVO">
+  		select * from recipe_basic where NATION_NM in
+  		<foreach collection="nation_nm" item="nation" index="index" open="(" close=")" separator=",">
+  			#{nation}
+  		</foreach>
+  		and TY_NM in
+  		<foreach collection="ty_nm" item="item" index="index" open="(" close=")" separator=",">
+  			#{item}
+  		</foreach>
+  		and LEVEL_NM in
+  		<foreach collection="level_nm" item="level" index="index" open="(" close=")" separator=",">
+  			#{level}
+  		</foreach>	
+   </select>
+   
+   <select id="getFavoriteRecipeList" resultType="com.great.domain.RecipeVO">
+  		select * from recipe_basic where NATION_NM in
+  		<foreach collection="nation" item="nation" index="index" open="(" close=")" separator=",">
+  			#{nation}
+  		</foreach>
+  		and TY_NM in
+  		<foreach collection="ty" item="item" index="index" open="(" close=")" separator=",">
+  			#{item}
+  		</foreach>
+  		and LEVEL_NM in
+  		<foreach collection="level" item="level" index="index" open="(" close=")" separator=",">
+  			#{level}
+  		</foreach>	
+   </select>
+  </mapper>
